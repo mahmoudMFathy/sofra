@@ -66,7 +66,7 @@ body {
 
 
 .navimg img {
-    width: 30%;
+    width: 40%;
     padding: 10px 0px;
 }
 
@@ -299,6 +299,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .navimg img {
+        width: 60%;
+        padding: 10px 0px;
+    }
+
     .navsearch input {
         width: 60%;
         padding: 0px 0px;
@@ -881,23 +886,6 @@ footer {
     font-size: 30px;
 }
 
-/* 
-input[type=date]::-webkit-calendar-picker-indicator {
-    -webkit-appearance: none;
-    display: none;
-} */
-/* input[type="date"]::-webkit-calendar-picker-indicator
-{
-    -webkit-appearance: none;
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    background: url(../img/clender\ img.png);
-    background-repeat: no-repeat;
-    background-position: 100% center;
-    background-size: cover;
-    cursor: pointer;
-} */
-
 .calendarcol input,
 .calendarcol2 input {
     font-size: 20px;
@@ -987,9 +975,10 @@ input[type="date"]+.calendar2 {
     .calendar2 {
         right: 310px;
     }
-.addproductpage{
-    margin-right: 0px;
-}
+
+    .addproductpage {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width:555px) {
@@ -1504,17 +1493,27 @@ input[type="date"]+.calendar2 {
     background-color: #240041;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
     .radio .radiospan {
         padding-left: 20px;
         margin-left: 22px;
     }
+}
+
+@media screen and (max-width:768px) {
 
     .contactus button {
-        font-size: 30px;
+        font-size: 20px;
         padding: 10px 40px;
     }
 
+}
+
+@media screen and (max-width:575px) {
+
+    .contactus .offset-3 {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width:425px) {
