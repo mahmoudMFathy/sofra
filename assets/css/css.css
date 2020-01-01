@@ -1660,15 +1660,7 @@ input[type="date"]+.calendar2 {
     font-size: 29px;
 }
 
-@media screen and (max-width:425px) {
-    .regform button {
-        font-size: 15px;
-    }
-
-    .forgetpass a {
-        font-size: 19px;
-    }
-
+@media screen and (max-width:575px) {
     .forgetpass .text-right,
     .forgetpass .text-left {
         text-align: center !important;
@@ -1680,6 +1672,14 @@ input[type="date"]+.calendar2 {
     .regform button:last-child {
         font-size: 12px;
     }
+    .regform button {
+        font-size: 15px;
+    }
+
+    .forgetpass a {
+        font-size: 19px;
+    }
+
 }
 
 /*-----------------------------------------contactus  page---------------------------------------------------------------------- */
