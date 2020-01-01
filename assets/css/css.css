@@ -599,6 +599,17 @@ footer {
 
 }
 
+
+
+/*-----------------------------------------my orders page---------------------------------------------------------------------- */
+
+
+
+
+.lastorder {
+    margin-bottom: 100px;
+}
+
 .previousorderitem {
     background: #ececec;
     padding: 20px;
@@ -625,15 +636,53 @@ footer {
     text-align: right;
     line-height: 55px;
 }
+.previousorderbutt {
+    padding-top: 100px;
+}
+
+.previousorderbutt button {
+    padding: 10px 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #ff4057;
+}
+
+.previousorderbutt button:first-child {
+    background: #008d3d;
+}
+
 
 @media screen and (max-width: 768px) {
+    .previousorderitem {
+        background: #ececec;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 30px;
+    }
+
+    .previousorderitem img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: #ec3454 5px solid;
+    }
+
 
     .previousorderitem h3 {
-        text-align: center;
+        text-align: right !important;
     }
 
     .previousorderitem p {
-        text-align: center;
+        text-align: right !important;
+    }
+    .previousorderbutt {
+        padding-top: 50px;
+    }
+    .previousorderbutt button {
+        padding: 5px 30px;
     }
 }
 
@@ -657,31 +706,37 @@ footer {
         font-size: 25px;
     }
 }
-
-/*-----------------------------------------my orders page---------------------------------------------------------------------- */
-.previousorderbutt {
-    padding-top: 100px;
-}
-
-.previousorderbutt button {
-    padding: 10px 50px;
+.mypreviousorderbutt button {
+    padding: 10px 100px;
     border-radius: 50px;
     margin-bottom: 20px;
     font-size: 20px;
     border: none;
     color: white;
-    background-color: #ff4057;
+    background: #009523;
 }
 
-.previousorderbutt button:first-child {
-    background: #008d3d;
-}
+@media screen and (max-width: 992px) {
 
-.lastorder {
-    margin-bottom: 100px;
+    .myorderitem h3 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .myorderitem p {
+        font-size: 20px;
+        text-align: left;
+
+    }
+    .currentorderphone button {
+        font-size: 20px !important;
+        padding: 15px 50px;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
+
 
 
     .myorderitem h3 {
@@ -694,6 +749,42 @@ footer {
         text-align: left;
 
     }
+    .currentorderphone button {
+        font-size: 20px !important;
+        padding: 20px 30px;
+    }
+    .currentorderconfirm button {
+        padding: 20px 50px;
+        font-size: 20px !important;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .myordercol .row {
+        padding: 0;
+        margin: 0;
+        text-align: center !important;
+    }
+
+    .myorderitem p,
+    .myorderitem h3 {
+        text-align: center !important;
+
+    }
+    .currentorderimg img {
+        width: 300px;
+        height: 300px;
+        margin-right: 80px;
+
+    }
+    .currentorderphone button {
+        text-align: center !important;
+    }
+
+    .currentorderconfirm {
+        text-align: center !important;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -713,7 +804,10 @@ footer {
     .previousorderbutt {
         padding-top: 10px;
     }
+    .currentorderimg img {
+        margin-right: 0px;
 
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -730,19 +824,17 @@ footer {
     .myorderitem h3 {
         font-size: 35px;
     }
+    .currentorderimg img {
+        width: 250px;
+        height: 250px;
+        margin-right: 0px;
+
+    }
 }
+
 
 /*-----------------------------------------my previous order page---------------------------------------------------------------------- */
 
-.mypreviousorderbutt button {
-    padding: 10px 100px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    border: none;
-    color: white;
-    background: #009523;
-}
 
 .myprevorderitem h3 {
     color: #240041;
@@ -770,7 +862,15 @@ footer {
         text-align: center;
     }
 }
+@media screen and (max-width:320px) {
 
+.mypreviousorderbutt button {
+    padding: 10px 70px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+}
 @media screen and (max-width:320px) {
     .currentorderphone button {
         font-size: 15px !important;
@@ -788,7 +888,7 @@ footer {
     padding: 10px 50px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 575px) {
     .neworderphone {
         text-align: center !important;
     }
@@ -799,7 +899,6 @@ footer {
         padding: 10px 40px;
     }
 }
-
 /*-----------------------------------------offer page---------------------------------------------------------------------- */
 .offerpage p {
     color: #ec3454;
@@ -828,6 +927,7 @@ footer {
     .offerpage p {
         font-size: 40px;
     }
+    
 }
 
 @media screen and (max-width:320px) {
@@ -931,6 +1031,14 @@ input[type="date"]+.calendar2 {
         width: 90%;
     }
 
+    .myprevorderitem h3 {
+        text-align: left;
+    }
+
+    .myprevorderitem p {
+        text-align: left;
+        font-size: 20px;
+    }
 
 }
 
@@ -950,11 +1058,19 @@ input[type="date"]+.calendar2 {
         border: none;
         margin-bottom: 20px;
     }
+    .myprevorderitem h3 {
+        text-align: left;
+    }
+
+    .myprevorderitem p {
+        text-align: left;
+        font-size: 15px;
+    }
 
 }
 
 @media screen and (max-width:575px) {
-
+    
     .calendarcol,
     .calendarcol2 {
         text-align: center !important;
@@ -979,6 +1095,16 @@ input[type="date"]+.calendar2 {
     .addproductpage {
         margin-right: 0px;
     }
+    
+    .myprevorderitem h3 {
+        text-align: center !important;
+    }
+
+    .myprevorderitem p {
+        text-align: center !important;
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width:555px) {
@@ -1229,21 +1355,60 @@ input[type="date"]+.calendar2 {
     margin-bottom: 50px;
 }
 
+.responsivemorefood {
+    background: url(../img/offers-bg.jpg);
+    padding: 50px 0px;
+}
+
+.responsivemorefood {
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.slick-dots button {
+    background: #240041;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #240041;
+
+}
+
+.slick-active button {
+    background: #ec3454;
+    color: #ec3454;
+
+}
+
 .relativediv {
     position: relative;
-    margin-bottom: 50px;
+    height: auto;
+    padding: 0px 20px;
+    margin: 50px 0px;
+
+}
+
+.relativediv img {
+    border-radius: 20px;
+    height: 50%;
 }
 
 .absldiv {
     position: absolute;
     top: 0;
-    right: 0;
-    opacity: .9;
+    right: 20;
     background: #6b6b6c79;
-    width: 100%;
-    height: 100%;
-    display: none;
     cursor: pointer;
+    padding: 130px 98 px;
+    border-radius: 20px;
+    display: none;
+
+
 }
 
 .relativediv:hover .absldiv {
@@ -1251,10 +1416,118 @@ input[type="date"]+.calendar2 {
 }
 
 .absldiv a {
-    top: 50;
-    position: absolute;
-    right: 50;
     font-size: 20px;
+    color: white;
+    font-weight: bold;
+    /* max-width: 299px;
+    max-height: 30px !important; */
+}
+
+@media screen and (max-width:1024px) {
+    .absldiv {
+        padding: 50px 57px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .absldiv {
+        padding: 50px 44px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .absldiv {
+        padding: 48px 57px;
+    }
+
+    .evaluser {
+        font-size: 29px;
+        background: #e5e5e5;
+        padding: 50px 20px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .absldiv {
+        padding: 48px 79px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .evaluser {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .byuser {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .absldiv {
+        padding: 48px 168px 48px 168px;
+    }
+
+    .shopinformation span {
+        font-size: 30px;
+    }
+
+    .evaltitle h1 {
+        font-size: 40px;
+    }
+
+    .senteval h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .morefood h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .absldiv {
+        padding: 48px 141px 48px 141px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .absldiv {
+        padding: 47px 116px 47px 116px;
+        text-align: center;
+    }
+
+    .evalstars {
+        padding: 10px 50px;
+        font-size: 20px;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .absldiv {
+        padding: 48px 89px 48px 89px;
+        text-align: center;
+    }
+
+    .shopinformation span {
+        font-size: 25px;
+    }
+
+    .evaltitle h1 {
+        font-size: 30px;
+    }
+
 }
 
 /*-----------------------------------------register seller page---------------------------------------------------------------------- */
